@@ -10,3 +10,8 @@ def homepage():
 @app.route('/testing')
 def test():
     return {'hello':'world'}
+
+@auth.route('/logout')
+def logMeOut():
+    logout_user()
+    return redirect(url_for('auth.logMeIn'))

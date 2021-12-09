@@ -8,3 +8,9 @@ blog = Blueprint('blog', __name__, template_folder='blog_templates')
 @blog.route('/blog/main')
 def blogHome():
     return render_template('blog.html')
+
+@blog.route('/posts/create', methods = ["GET", "POST"])
+def createPost():
+    form = CreatePostForm()
+    if 
+    return render_template('createpost.html')

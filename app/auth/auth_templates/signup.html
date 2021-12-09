@@ -22,6 +22,10 @@
             {{ form.confirm_password.label }}
             {{ form.confirm_password(class='form-control', placeholder='Confirm Password') }}
         </fieldset>
+        <fieldset>
+            {{ form.remember_me.label }}
+            {{ form.remember_me(class='form-check-input') }}
+         </fieldset>   
         {{ form.submit(class='btn btn-primary') }}
     </div>
     

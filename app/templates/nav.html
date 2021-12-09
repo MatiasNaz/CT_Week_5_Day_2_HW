@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pulls
-Issues
-Marketplace
-Explore
- 
-@MatiasNaz 
-smtsuchi
-/
-intro_to_flask_vanguard77
-Public
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-More
-intro_to_flask_vanguard77/app/templates/nav.html
-
-smtsuchi end of day 1
-Latest commit affa1c0 2 days ago
- History
- 0 contributors
-40 lines (40 sloc)  2.07 KB
-   
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Shoha's Bike Shop</a>
@@ -56,9 +27,15 @@ Latest commit affa1c0 2 days ago
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
+                
+                {% if current_user.is authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <p class="nav-link"> Hello, {{ current_user.username }} </p>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for "
+                </li>
+
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -67,16 +44,3 @@ Latest commit affa1c0 2 days ago
         </div>
     </div>
 </nav>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
